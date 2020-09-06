@@ -8,17 +8,31 @@
   <a href="https://github.com/yelloxing/emoji-render/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/emoji-render.svg" alt="License"></a>
 </p>
 
+> 欢迎帮忙添加更多表情图片
+
 ## 如何使用
+
+你可以通过npm方式，由于源码采用的是ES5以前的语法，因此可以不添加babel：
 
 ```bash
 npm install --save emoji-render
 ```
 
-我们目前只支持npm方式，由于源码采用的是ES5以前的语法，因此可以不添加babel。
+然后这样获取：
 
 ```js
 import emojiRender from 'emoji-render';
+```
 
+当然，你也可以使用CDN引入：
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/emoji-render"></script>
+```
+
+拿到以后这样使用：
+
+```js
 emojiRender('::rocket(火箭)：可以去太空');
 // 结果：🚀(火箭)：可以去太空
 
@@ -30,7 +44,9 @@ emojiRender('::rocket(火箭)：可以去太空');
 ----------------------
 | | | | | | | |
 |-|-|-|-|-|-|-|
-|::ghost 👻|::smile 😊|::cry 😭|::sad 😟|
+|::ghost 👻|::smile 😊|::cry 😭|::sad 😟|::fear 😨|::angry 😠|::skull 💀|
+|::robot 🤖|::hot 🥵|::cold 🥶|::woozy 🥴|::dizzy 😵|::nerd 🤓|::confuse 😕|
+|::worry 😟|
 
 动物
 ----------------------
@@ -40,11 +56,14 @@ emojiRender('::rocket(火箭)：可以去太空');
 |::snake 🐍|::dolphin 🐬|::fish 🐟|::butterfly 🦋|::ant 🐜|::ox 🐂|::elephant 🐘|
 |::panda 🐼|
 
-水果
+水果或蔬菜
 ----------------------
 | | | | | | | |
 |-|-|-|-|-|-|-|
-|::strawberry 🍓|::banana 🍌|::orange 🍊|::watermelon 🍉|::grape 🍇|
+|::strawberry 🍓|::banana 🍌|::orange 🍊|::watermelon 🍉|::grape 🍇|::melon 🍈|::lemon 🍋|
+|::mango 🥭|::pear 🍐|::peach 🍑|::cherries 🍒|::tomato 🍅|::coconut 🥥|::avocado 🥑|
+|::eggplant 🍆|::potato 🥔|::carrot 🥕|::cucumber 🥒|::broccoli 🥦|::garlic 🧄|::onion 🧅|
+|::mushroom 🍄|::chestnut 🌰|::peanuts 🥜|
 
 交通工具
 ----------------------
