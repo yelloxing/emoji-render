@@ -1,6 +1,6 @@
 {
   "name": "emoji-render",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "自定义表情图片启动者，支持更丰富的字符输入",
   "main": "index.js",
   "repository": {

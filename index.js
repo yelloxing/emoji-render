@@ -36,7 +36,10 @@ var emojiList = {
 
     // 交通工具
     rocket: "🚀", bus: "🚌", airplane: "✈️", metro: "🚇", train: "🚆", bicycle: "🚲", motorcycle: "🏍️",
-    car: "🚓", ambulance: "🚑", "fire-engine": "🚒"
+    car: "🚓", ambulance: "🚑", "fire-engine": "🚒",
+
+    // 乐器
+    violin:"🎻",trumpet:"🎺",guitar:"🎸",saxophone:"🎷",microphone:"🎤"
 
 };
 
