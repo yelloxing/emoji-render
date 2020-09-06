@@ -27,7 +27,7 @@ import emojiRender from 'emoji-render';
 当然，你也可以使用CDN引入：
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/emoji-render/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emoji-render@0.1.2/index.js"></script>
 ```
 
 拿到以后这样使用：
@@ -74,8 +74,8 @@ emojiRender('::rocket(火箭)：可以去太空');
 
 乐器
 --------------------------
-| | | | | | | |
-|-|-|-|-|-|-|-|
+| | | | | |
+|-|-|-|-|-|
 |::violin 🎻|::trumpet 🎺|::guitar 🎸|::saxophone 🎷|::microphone 🎤|
 
 ## 开源协议
