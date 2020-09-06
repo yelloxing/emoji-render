@@ -19,10 +19,39 @@ npm install --save emoji-render
 ```js
 import emojiRender from 'emoji-render';
 
-emojiRender('');
-// 结果：
+emojiRender('::rocket(火箭)：可以去太空');
+// 结果：🚀(火箭)：可以去太空
 
 ```
+
+# 对照表
+
+表情
+----------------------
+| | | | | | | |
+|-|-|-|-|-|-|-|
+|::ghost 👻|::smile 😊|::cry 😭|::sad 😟|
+
+动物
+----------------------
+| | | | | | | |
+|-|-|-|-|-|-|-|
+|::dog 🐕|::cat 🐈|::pig 🐖|::fox 🦊|::wolf 🐺|::mouse 🐁|::owl 🦉|
+|::snake 🐍|::dolphin 🐬|::fish 🐟|::butterfly 🦋|::ant 🐜|::ox 🐂|::elephant 🐘|
+|::panda 🐼|
+
+水果
+----------------------
+| | | | | | | |
+|-|-|-|-|-|-|-|
+|::strawberry 🍓|::banana 🍌|::orange 🍊|::watermelon 🍉|::grape 🍇|
+
+交通工具
+----------------------
+| | | | | | | |
+|-|-|-|-|-|-|-|
+|::rocket 🚀|::bus 🚌|::airplane ✈️|::metro 🚇|::train 🚆|::bicycle 🚲|::motorcycle 🏍️|
+|::car 🚓|::ambulance 🚑|::fire-engine 🚒|
 
 ## 开源协议
 
