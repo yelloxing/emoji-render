@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+    <script src="./index.js"></script>
+    <style>
+        pre {
+            width: 50vw;
+            position: fixed;
+        }
+
+        pre:first-child {
+            left: 0;
+            top: 0;
+        }
+
+        pre:nth-child(2) {
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <pre id="source">
+        <div>
+            特殊的的测试：
+            |::aaaa|::bbbbbbb|:::cry|:sad::owl|
+        </div>
+        <div>
+            表情：
+            |::ghost |::smile |::cry |::sad |
+        </div>
+        <div>
+            动物：
+            |::dog |::cat |::pig |::fox |::wolf |::mouse |::owl |
+            |::snake |::dolphin |::fish |::butterfly |::ant |::ox |::elephant |
+            |::panda |
+        </div>
+        <div>
+            水果：
+            |::strawberry |::banana |::orange |::watermelon |::grape |
+        </div>
+        <div>
+            交通工具：
+            |::rocket |::bus |::airplane |::metro |::train |::bicycle |::motorcycle |
+            |::car |::ambulance |::fire-engine |
+        </div>
+    </pre>
+    <pre id="target"></pre>
+
+    <script>
+
+        document.getElementById('target').innerHTML = emojiRender(document.getElementById('source').innerHTML);
+
+    </script>
+
+</body>
+
+</html>

@@ -25,8 +25,54 @@ var emojiList = {
 
 };
 
-module.exports = function (oralCode) {
+// 设置上面表情的最大长度
+var maxEmojiLength = 21;
 
+var compiler = function (oralCode) {
 
+    // 当前判断的位置
+    var index = 0;
+
+    // 编译后的字符串
+    var newCode = "";
+
+    // 获取往后num个值
+    var nextNValue = function (num, _index) {
+        _index = arguments.length > 1 ? _index : index;
+        return oralCode.substring(_index, num + _index > oralCode.length ? oralCode.length : num + _index);
+    };
+
+    while (index < oralCode.length) {
+        if (nextNValue(2) == '::') {
+
+            // 寻找表情的时候，从长到短进行
+            for (var num = maxEmojiLength; num > 0; num--) {
+
+                // 如果找到了表情
+                var emoji = emojiList[nextNValue(num, index + 2)];
+                if (emoji) {
+                    newCode += emoji;
+                    index += (num + 2);
+                    break;
+                }
+
+            }
+
+            if (num <= 0) {
+                newCode += oralCode[index++];
+            }
+
+        } else {
+            newCode += oralCode[index++];
+        }
+    }
+
+    return newCode;
 
 };
+
+if ((typeof module === "undefined" ? false : typeof (module)) === "object" && typeof (module.exports) === "object") {
+    module.exports = compiler;
+} else {
+    window.emojiRender = compiler;
+}
