@@ -1,0 +1,22 @@
+{
+  "name": "emoji-render",
+  "version": "0.0.0-alpha",
+  "description": "自定义表情图片启动者，支持更丰富的字符输入",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yelloxing/emoji-render.git"
+  },
+  "keywords": [
+    "emoji"
+  ],
+  "author": "心叶",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yelloxing/emoji-render/issues"
+  },
+  "homepage": "https://github.com/yelloxing/emoji-render#readme"
+}
